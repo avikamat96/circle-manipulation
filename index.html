@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution</title>
     <style>
+        body{
+            height: 100vh;
+            overflow-y: hidden;
+        }
         .node{
             background: black;
             height: 10px;
@@ -12,18 +16,22 @@
             border-radius: 100%;
             position: absolute;
         }
+        #parent {
+            height: 100%;
+            width: 100%;
+            transform-origin: center;
+        }
         
     </style>
     <script src="./index.js"></script>
 </head>
 <body>
-<div>
+<div class="input-container">
     <input id="elements" type="number" placeholder="Enter number of elements" required>
     <input id="radius" type="number" placeholder="radius" required>
     <input id="speed" type="number" placeholder="speed" required>
 
     <button id="submit" onclick="generateCircle()">Submit</button>
-</form>
 </div>
     <div id="parent"></div>
 
